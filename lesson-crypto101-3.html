@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Crypto 101 - Lesson 3: Wallets & Private Keys · Yi Web3 Notes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <span class="logo-mark">Y</span>
+        <a href="index.html" class="logo-text">Yi Web3 <span>Notes</span></a>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="index.html#courses" class="nav-link active">Courses</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="layout">
+    <!-- Sidebar -->
+    <aside class="sidebar light">
+      <div class="course-info">
+        <p class="course-label">Course</p>
+        <h2>Crypto 101</h2>
+        <p class="tagline">From zero to understanding crypto.</p>
+        <p class="meta-line">Level: <span>Beginner</span></p>
+        <p class="meta-line">Total time: <span>~ 1–2 hours</span></p>
+      </div>
+
+      <nav class="chapters">
+        <h3>Chapters</h3>
+        <ol>
+          <li><a href="lesson-crypto101-1.html">1. What is Bitcoin?</a></li>
+          <li><a href="lesson-crypto101-2.html">2. Public Chains & L2</a></li>
+          <li class="active"><a href="lesson-crypto101-3.html">3. Wallets & Private Keys</a></li>
+          <li><a href="lesson-crypto101-4-cex-dex.html">4. CEX vs DEX</a></li>
+          <li><a href="lesson-crypto101-5.html">5. Gas & Fees</a></li>
+          <li><a href="lesson-crypto101-6.html">6. Stablecoins</a></li>
+          <li><a href="lesson-crypto101-7.html">7. Meme Coins & Risks</a></li>
+        </ol>
+      </nav>
+    </aside>
+
+    <!-- Content -->
+    <main class="content">
+      <article class="lesson">
+
+        <header class="lesson-header">
+          <p class="breadcrumb">
+            <a href="index.html">Home</a> ·
+            <a href="index.html#courses">Crypto 101</a> ·
+            Lesson 3
+          </p>
+          <h1>Lesson 3: Wallets & Private Keys</h1>
+          <p class="lesson-meta">
+            Time: 20 min · Last updated: 2025-11-14
+          </p>
+        </header>
+
+        <section>
+          <h2>1. What is a crypto wallet?</h2>
+          <p>
+            A <strong>crypto wallet</strong> does not “store” your coins.
+            Instead, it stores the <strong>keys</strong> that prove ownership of your assets on the blockchain.
+          </p>
+
+          <p>一句话：<strong>钱包 = 你访问区块链资金的钥匙管理器</strong></p>
+
+          <ul>
+            <li>Your assets live on the blockchain</li>
+            <li>Your wallet stores your <strong>private key</strong></li>
+            <li>Whoever controls the private key controls the coins</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>2. Private Key & Seed Phrase</h2>
+          <p>钱包最核心的两样东西：</p>
+
+          <ul>
+            <li><strong>Private Key（私钥）＝ 真正的钥匙</strong></li>
+            <li><strong>Seed Phrase（助记词）＝ 私钥的人类可读版本</strong></li>
+          </ul>
+
+          <p>
+            助记词是一组 12 / 18 / 24 个英文单词，例如：
+          </p>
+
+          <div class="callout warning light">
+            <p>
+              <strong>never</strong> reveal your seed phrase.  
+              Never screenshot, never upload to cloud, never type it on unknown websites.
+            </p>
+          </div>
+
+          <p>
+            巨重要：<strong>只要别人拿到你的助记词，你的币当场消失。</strong>
+          </p>
+        </section>
+
+        <section>
+          <h2>3. Public Key & Address</h2>
+          <p>
+            从私钥可以生成：
+          </p>
+
+          <ul>
+            <li><strong>Public Key（公钥）</strong></li>
+            <li><strong>Address（钱包地址）</strong> – 你分享给别人收款的地址</li>
+          </ul>
+
+          <p>
+            举例（以太坊地址都以 <code>0x</code> 开头）：
+          </p>
+
+          <div class="compare-card" style="margin-top: 10px;">
+            <p style="font-size:14px;">
+              <strong>Your Address:</strong><br />
+              0xA1b3...9F24  
+            </p>
+            <p style="font-size:13px;color:#6b7280;margin-top:4px;">
+              安全可公开，别人知道也不会影响你。
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <h2>4. Hot Wallet vs Cold Wallet</h2>
+          <p>钱包分两大类：</p>
+
+          <div class="compare-grid">
+            <div class="compare-card cex">
+              <h3>Hot Wallet（热钱包）</h3>
+              <ul>
+                <li>例如：Phantom、Metamask、Rabby</li>
+                <li>连接互联网，使用方便</li>
+                <li>适合日常交易、DEX、NFT、meme</li>
+                <li>风风险来自钓鱼网站、恶意授权</li>
+              </ul>
+            </div>
+
+            <div class="compare-card dex">
+              <h3>Cold Wallet（冷钱包）</h3>
+              <ul>
+                <li>例如：Ledger、Trezor</li>
+                <li>离线存储私钥，安全最高</li>
+                <li>适合长期持仓、高价值资产</li>
+                <li>需要硬件设备签名交易</li>
+              </ul>
+            </div>
+          </div>
+
+          <p>
+            小结：<strong>热钱包灵活方便，冷钱包适合长期保管。</strong>
+          </p>
+        </section>
+
+        <section>
+          <h2>5. How a wallet signs a transaction</h2>
+          <p>每次你发送交易时，钱包会：</p>
+
+          <ol>
+            <li>创建交易（例如转 1 SOL）</li>
+            <li>用你的私钥进行签名</li>
+            <li>广播到区块链网络</li>
+          </ol>
+
+          <p>
+            钱包本身<strong>从不会上传你的私钥</strong>。  
+            私钥只用于本地签名。
+          </p>
+        </section>
+
+        <section>
+          <h2>6. Wallet safety checklist</h2>
+
+          <div class="callout warning light">
+            <h3>永远记住：</h3>
+            <p><strong>助记词 = 全部资产。</strong></p>
+          </div>
+
+          <ul>
+            <li>助记词只手抄，不拍照、不截图、不网盘</li>
+            <li>不用的授权（Approve）及时 revoke</li>
+            <li>每次连接钱包前确认网址</li>
+            <li>用多个钱包分仓：主钱包 / 小仓玩meme / 存储钱包</li>
+            <li>大额资金 → 冷钱包</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>7. Quick recap</h2>
+          <ul>
+            <li>钱包 ≠ 存币；你的币在链上，钱包只是钥匙管理器。</li>
+            <li>私钥 / 助记词永远不能泄露。</li>
+            <li>热钱包方便，冷钱包安全。</li>
+            <li>地址可以公开，私钥不能公开。</li>
+            <li>分仓 + 冷钱包 = 新手最安全的组合。</li>
+          </ul>
+
+          <p>
+            下一节（Lesson 4）已经讲完 CEX vs DEX。  
+            接下来我们进入链上实际会遇到的关键概念：「Gas & Fees」。
+          </p>
+        </section>
+
+        <footer class="lesson-footer">
+          <a class="nav-link" href="lesson-crypto101-2.html">← Previous: Public Chains & L2</a>
+          <a class="nav-link" href="lesson-crypto101-4-cex-dex.html">Next: CEX vs DEX →</a>
+        </footer>
+
+      </article>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Yi Web3 Notes. For education only, not financial advice.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

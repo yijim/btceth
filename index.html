@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Yi Web3 Notes · Learn Crypto the Clean Way</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="logo">
+      <span class="logo-mark">Y</span>
+      <a href="index.html" class="logo-text">Yi Web3 <span>Notes</span></a>
+    </div>
+    <nav class="main-nav">
+      <a href="#courses" class="nav-link">Courses</a>
+      <a href="notes.html" class="nav-link">Notes</a>
+      <a href="#about" class="nav-link">About</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero hero-btc">
+  <div class="container hero-inner">
+    <div class="hero-text">
+      <p class="eyebrow">Yi Web3 Notes</p>
+      <h1>Learn Crypto, Web3 &amp; Blockchain Clearly</h1>
+      <p class="hero-subtitle">
+        A clean and beginner-friendly guide to understanding wallets, public chains,
+        L2 scaling, DEX trading, security, and on-chain knowledge — explained without hype.
+      </p>
+      <div class="hero-actions">
+        <a href="#courses" class="btn-primary">Start Learning</a>
+        <a href="#about" class="btn-secondary">About Yi</a>
+      </div>
+      <p class="hero-footnote">Updated weekly · Free forever</p>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-card">
+        <p class="hero-card-label">Core Networks</p>
+        <div style="display:flex; gap:8px; margin-bottom:12px; flex-wrap:wrap;">
+          <span class="token-pill">BTC · Bitcoin</span>
+          <span class="token-pill">ETH · Ethereum</span>
+          <span class="token-pill">SOL · Solana</span>
+        </div>
+
+        <div class="metric" style="margin-bottom:10px;">
+          <p class="metric-label">Active Users</p>
+          <p class="metric-value">+ 1,200,000</p>
+        </div>
+
+        <div class="metric" style="margin-bottom:10px;">
+          <p class="metric-label">Supported</p>
+          <p class="metric-value">BTC · ETH · SOL · L2</p>
+        </div>
+
+        <p class="hero-card-note">Simple explanations for complex Web3 concepts.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="courses" class="courses">
+  <div class="container">
+    <h2>Crypto 101 — Start Here</h2>
+    <p class="section-subtitle">A structured beginner course covering the foundation of Web3.</p>
+
+    <div class="course-list">
+      <a class="course-card" href="lesson-crypto101-1.html">
+        <h3>1. What is Bitcoin?</h3>
+        <p>How Bitcoin works, why it matters, and what makes it special.</p>
+      </a>
+
+      <a class="course-card" href="lesson-crypto101-2.html">
+        <h3>2. Public Chains &amp; Layer 2</h3>
+        <p>Understand Ethereum, Solana, L2 scaling, and blockchain ecosystems.</p>
+      </a>
+
+      <a class="course-card" href="lesson-crypto101-3.html">
+        <h3>3. Wallets &amp; Private Keys</h3>
+        <p>Learn seed phrases, addresses, hot vs cold wallets, and protection.</p>
+      </a>
+
+      <a class="course-card" href="lesson-crypto101-4-cex-dex.html">
+        <h3>4. CEX vs DEX</h3>
+        <p>Centralized vs decentralized exchanges — which to use and when?</p>
+      </a>
+
+      <a class="course-card" href="lesson-crypto101-5.html">
+        <h3>5. Gas &amp; Fees</h3>
+        <p>Why blockchain fees exist, and why Solana is so cheap.</p>
+      </a>
+
+      <a class="course-card" href="lesson-crypto101-6.html">
+        <h3>6. Stablecoins</h3>
+        <p>Differences, risks, and which one is actually stable.</p>
+      </a>
+
+      <a class="course-card" href="lesson-crypto101-7.html">
+        <h3>7. Meme Coins &amp; Risks</h3>
+        <p>The truth behind memes, risk management, and avoiding traps.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="notes-preview" class="courses">
+  <div class="container">
+    <h2>Yi’s Research & Notes</h2>
+    <p class="section-subtitle">Data, experiments, trading thoughts, and real Web3 observations.</p>
+
+    <div class="course-list">
+      <a class="course-card" href="note-sol-meme-flow.html">
+        <h3>SOL Meme Flow & Volume Notes</h3>
+        <p>Observations on Solana meme volume, liquidity, and entry timing.</p>
+      </a>
+
+      <a class="course-card" href="note-cex-vs-dex-liquidity.html">
+        <h3>CEX vs DEX Liquidity Behavior</h3>
+        <p>Comparing orderbook depth vs AMM pools in real trading.</p>
+      </a>
+
+      <a class="course-card" href="note-risk-journal-2025.html">
+        <h3>Risk Journal · 2025</h3>
+        <p>Tracking mistakes, adjustments, and lessons in trading.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <div class="container">
+    <h2>About Yi</h2>
+    <p class="section-subtitle">A simple place to share clear blockchain knowledge.</p>
+
+    <p class="about-text">
+      I'm Yi — someone who believes Web3 should be simple, not overwhelming.
+      After spending years navigating crypto communities, tools, and chains, I realized beginners often get lost in noise and complexity.
+      So I created this space to make learning clean, calm, and clear.
+      <br /><br />
+      No hype. No chaos. Just real understanding.<br />
+      All content here is free for anyone who wants to learn.
+    </p>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© <span id="year"></span> Yi Web3 Notes. For education only, not financial advice.</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

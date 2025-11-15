@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Crypto 101 - Lesson 4: CEX vs DEX · Yi Web3 Notes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- 顶部导航，与 index / lesson-1 保持一致 -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <span class="logo-mark">Y</span>
+        <a href="index.html" class="logo-text">Yi Web3 <span>Notes</span></a>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="index.html#courses" class="nav-link active">Courses</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="layout">
+    <!-- 左侧章节导航 -->
+    <aside class="sidebar light">
+      <div class="course-info">
+        <p class="course-label">Course</p>
+        <h2>Crypto 101</h2>
+        <p class="tagline">From zero to understanding crypto.</p>
+        <p class="meta-line">Level: <span>Beginner</span></p>
+        <p class="meta-line">Total time: <span>~ 1–2 hours</span></p>
+      </div>
+
+      <nav class="chapters">
+        <h3>Chapters</h3>
+        <ol>
+          <li><a href="lesson-crypto101-1.html">1. What is Bitcoin?</a></li>
+          <li><a href="lesson-crypto101-2.html">2. Public Chains & L2</a></li>
+          <li><a href="lesson-crypto101-3.html">3. Wallets & Private Keys</a></li>
+          <li class="active"><a href="lesson-crypto101-4-cex-dex.html">4. CEX vs DEX</a></li>
+          <li><a href="lesson-crypto101-5.html">5. Gas & Fees</a></li>
+          <li><a href="lesson-crypto101-6.html">6. Stablecoins</a></li>
+          <li><a href="lesson-crypto101-7.html">7. Meme Coins & Risks</a></li>
+        </ol>
+      </nav>
+    </aside>
+
+    <!-- 右侧正文 -->
+    <main class="content">
+      <article class="lesson">
+        <header class="lesson-header">
+          <p class="breadcrumb">
+            <a href="index.html">Home</a> ·
+            <a href="index.html#courses">Crypto 101</a> ·
+            Lesson 4
+          </p>
+          <h1>Lesson 4: CEX vs DEX</h1>
+          <p class="lesson-meta">
+            Time: 20 min · Last updated: 2025-11-14
+          </p>
+        </header>
+
+        <section>
+          <h2>1. CEX & DEX in one sentence</h2>
+          <p>
+            In crypto, there are two main ways to trade: 
+            <strong>CEX (Centralized Exchange，中心化交易所)</strong> and 
+            <strong>DEX (Decentralized Exchange，去中心化交易所)</strong>.
+          </p>
+          <p>
+            A simple mental model:
+            <br />
+            <strong>CEX ≈ 你把钱存进交易所账户里，让交易所帮你撮合买卖；</strong><br />
+            <strong>DEX ≈ 你用自己的链上钱包，直接通过智能合约交换代币。</strong>
+          </p>
+        </section>
+
+        <section>
+          <h2>2. CEX vs DEX at a glance</h2>
+          <p>先用一张表把两者的感觉拉开：</p>
+
+          <div class="compare-grid">
+            <div class="compare-card cex">
+              <h3>CEX（中心化交易所）</h3>
+              <ul>
+                <li>典型例子：Binance、OKX、Bybit 等</li>
+                <li>你先把法币/数字货币充进交易所账户</li>
+                <li>交易所维护一套「内部账本」，帮你撮合挂单</li>
+                <li>有账号密码、邮箱、手机号、KYC、客服</li>
+                <li>下单体验像炒股票：限价、市价、止盈、止损、合约</li>
+              </ul>
+            </div>
+
+            <div class="compare-card dex">
+              <h3>DEX（去中心化交易所）</h3>
+              <ul>
+                <li>典型例子：Uniswap（以太坊）、Jupiter / Raydium（Solana）</li>
+                <li>资产始终在你的链上钱包里（Metamask、Phantom 等）</li>
+                <li>通过 <strong>智能合约</strong> 直接和流动性池做交换</li>
+                <li>不需要账号、密码、邮箱，只有「钱包授权」</li>
+                <li>上币速度快，长尾资产多，尤其是新发行的 meme / 小币</li>
+              </ul>
+            </div>
+          </div>
+
+          <p style="font-size:13px;color:#6b7280;margin-top:4px;">
+            小结：<strong>CEX 更像“带客服的证券账户”，DEX 更像“你自己掌握钥匙的钱包+换币工具”。</strong>
+          </p>
+        </section>
+
+        <section>
+          <h2>3. How CEX works（CEX 是怎么运作的？）</h2>
+          <p>
+            在 CEX 里，你看到的「余额」，本质上是交易所在自己的数据库里，给你记的一行账。
+            真正的链上资产，由交易所统一管理在它自己的冷/热钱包里。
+          </p>
+          <ul>
+            <li>你充值：链上转账 → 交易所检测到账 → 把内部账户余额 +1</li>
+            <li>你下单：只是改数据库里的「挂单表」「成交记录」</li>
+            <li>你提现：交易所从它的钱包往你的地址打币</li>
+          </ul>
+          <p>
+            优点：体验好、撮合快、功能多（合约、杠杆、止损等）。<br />
+            风险：你在<strong>信任交易所</strong>，它不跑路、不爆雷、不乱冻结。
+          </p>
+        </section>
+
+        <section>
+          <h2>4. How DEX works（DEX 是怎么运作的？）</h2>
+          <p>
+            在 DEX 里，你的钱不进「平台账户」，而是一直在你的钱包地址里。
+            交易靠的是链上的智能合约 + 流动性池。
+          </p>
+          <ul>
+            <li>有人把 Token A 和 Token B 存进池子（提供流动性）</li>
+            <li>你想用 A 换 B：调用合约，合约按公式（如 x·y=k）帮你兑换</li>
+            <li>所有记录直接写在链上，可查可追踪</li>
+          </ul>
+          <p>
+            优点：<strong>非托管（non-custodial）</strong>，你自己掌握私钥；任何人都可以接入，不需要审批。<br />
+            风险：合约有可能有漏洞、项目方可以改参数、假币合约很多。
+          </p>
+        </section>
+
+        <section>
+          <h2>5. Pros & cons（优缺点对比）</h2>
+
+          <div class="compare-grid">
+            <div class="compare-card cex">
+              <h3>CEX 优点</h3>
+              <ul>
+                <li>支持法币充值/提现，适合第一笔入金</li>
+                <li>下单界面友好，新手上手成本低</li>
+                <li>有客服、工单、风控、风控提示</li>
+                <li>衍生品丰富：合约、杠杆、期权等</li>
+              </ul>
+              <h3 style="margin-top:8px;">CEX 缺点</h3>
+              <ul>
+                <li>需要 KYC，存在隐私和合规风险</li>
+                <li>平台有权冻结账号或限制提现</li>
+                <li>极端情况下有「跑路 / 被黑客攻击」风险</li>
+              </ul>
+            </div>
+
+            <div class="compare-card dex">
+              <h3>DEX 优点</h3>
+              <ul>
+                <li>自己掌握私钥，资产不托管给平台</li>
+                <li>全球可用，不需要实名注册</li>
+                <li>上币速度快，能第一时间接触到新项目</li>
+                <li>适合链上原生玩法（meme、NFT、DeFi 等）</li>
+              </ul>
+              <h3 style="margin-top:8px;">DEX 缺点</h3>
+              <ul>
+                <li>需要懂基础链上操作，新手容易点错</li>
+                <li>合约 / 假币 / 钓鱼网站风险高</li>
+                <li>极端行情时滑点大、gas 费可能飙升</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>6. When should you use which?（什么时候用哪个？）</h2>
+          <p>给一个简单、可执行的决策模板，你可以按自己风格微调：</p>
+
+          <ul>
+            <li><strong>第一笔入金（法币 → USDT / BTC / ETH）：</strong>多数情况下用 CEX。</li>
+            <li><strong>玩 meme、小币、刚上的新项目：</strong>必须用 DEX + 链上钱包。</li>
+            <li><strong>高频合约、短线交易：</strong>一般还是 CEX 体验更好、工具更多。</li>
+            <li><strong>中长期持仓（BTC / ETH / SOL 等主流币）：</strong>考虑冷钱包或多地址分散保管。</li>
+          </ul>
+
+          <p>
+            很多人实际的路径是：<br />
+            <code>法币 → CEX 买主流币 → 提一部分到钱包 → 用 DEX 试水小仓位</code>
+          </p>
+        </section>
+
+        <section class="callout warning light">
+          <h3>⚠️ Safety checklist（安全清单）</h3>
+          <p><strong>在 CEX：</strong></p>
+          <ul>
+            <li>不要把所有资产都放在一家交易所</li>
+            <li>必须开启 2FA（Google Auth / 手机验证）</li>
+            <li>邮箱、手机卡、登录密码分开管理</li>
+          </ul>
+
+          <p><strong>在 DEX：</strong></p>
+          <ul>
+            <li>助记词只手抄，永远不要截屏 / 发送 / 网盘保存</li>
+            <li>每次连接钱包前确认网址是否正确，提防钓鱼站</li>
+            <li>新合约先小额试单，避免被假币、蜜罐套路</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>7. Quick recap（本节小结）</h2>
+          <ul>
+            <li>CEX：中心化交易所，体验好，但需要信任平台。</li>
+            <li>DEX：去中心化交易所，你掌握私钥，但要对自己的操作负责。</li>
+            <li>实际使用里，两者并不是二选一，而是搭配使用。</li>
+          </ul>
+          <p>
+            下一节，我们会拆开讲「Gas & Fees」，帮助你看懂链上的各种手续费，
+            以及为什么不同链之间费用差这么多。
+          </p>
+        </section>
+
+        <footer class="lesson-footer">
+          <a class="nav-link" href="lesson-crypto101-3.html">← Previous: Wallets & Private Keys</a>
+          <a class="nav-link" href="lesson-crypto101-5.html">Next: Gas & Fees →</a>
+        </footer>
+      </article>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Yi Web3 Notes. For education only, not financial advice.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

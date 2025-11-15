@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Crypto 101 - Lesson 2: Public Chains & Layer 2 · Yi Web3 Notes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- 顶部导航 -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <span class="logo-mark">Y</span>
+        <a href="index.html" class="logo-text">Yi Web3 <span>Notes</span></a>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="index.html#courses" class="nav-link active">Courses</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="layout">
+    <!-- 左侧导航 -->
+    <aside class="sidebar light">
+      <div class="course-info">
+        <p class="course-label">Course</p>
+        <h2>Crypto 101</h2>
+        <p class="tagline">From zero to understanding crypto.</p>
+        <p class="meta-line">Level: <span>Beginner</span></p>
+        <p class="meta-line">Total time: <span>~ 1–2 hours</span></p>
+      </div>
+
+      <nav class="chapters">
+        <h3>Chapters</h3>
+        <ol>
+          <li><a href="lesson-crypto101-1.html">1. What is Bitcoin?</a></li>
+          <li class="active"><a href="lesson-crypto101-2.html">2. Public Chains & L2</a></li>
+          <li><a href="lesson-crypto101-3.html">3. Wallets & Private Keys</a></li>
+          <li><a href="lesson-crypto101-4-cex-dex.html">4. CEX vs DEX</a></li>
+          <li><a href="lesson-crypto101-5.html">5. Gas & Fees</a></li>
+          <li><a href="lesson-crypto101-6.html">6. Stablecoins</a></li>
+          <li><a href="lesson-crypto101-7.html">7. Meme Coins & Risks</a></li>
+        </ol>
+      </nav>
+    </aside>
+
+    <!-- 正文 -->
+    <main class="content">
+      <article class="lesson">
+
+        <header class="lesson-header">
+          <p class="breadcrumb">
+            <a href="index.html">Home</a> ·
+            <a href="index.html#courses">Crypto 101</a> ·
+            Lesson 2
+          </p>
+          <h1>Lesson 2: Public Chains & Layer 2</h1>
+          <p class="lesson-meta">
+            Time: 20 min · Last updated: 2025-11-14
+          </p>
+        </header>
+
+        <section>
+          <h2>1. What is a Public Chain?</h2>
+          <p>
+            A <strong>public chain（公链）</strong> is an open blockchain network
+            that anyone can use, build on, or send transactions on.
+          </p>
+          <p>你可以把公链简单理解为：<strong>一个全球共享的计算机</strong>。</p>
+
+          <ul>
+            <li><strong>Bitcoin</strong> = 最安全的价值存储链</li>
+            <li><strong>Ethereum</strong> = 智能合约的标准平台</li>
+            <li><strong>Solana</strong> = 高性能链，速度快、费用极低</li>
+          </ul>
+
+          <p>
+            公链负责处理所有链上活动：转账、部署合约、Mint NFT、Swap 等等。
+            每条链的交易规则、速度、费用都不同。
+          </p>
+        </section>
+
+        <section>
+          <h2>2. Why do we need different public chains?</h2>
+          <p>因为每条链有不同的设计哲学和侧重点：</p>
+
+          <div class="compare-grid">
+
+            <div class="compare-card" style="background:#fefce8;border-color:#facc15;">
+              <h3>Bitcoin · 安全第一</h3>
+              <ul>
+                <li>去中心化程度最高</li>
+                <li>设计简单且极其稳健</li>
+                <li>主要用途：价值存储（Digital Gold）</li>
+              </ul>
+            </div>
+
+            <div class="compare-card" style="background:#eef2ff;border-color:#818cf8;">
+              <h3>Ethereum · 灵活与生态</h3>
+              <ul>
+                <li>智能合约发源地</li>
+                <li>DeFi / NFT / DAO 的主阵地</li>
+                <li>但手续费（Gas）较贵，需要扩容</li>
+              </ul>
+            </div>
+
+            <div class="compare-card" style="background:#ecfdf5;border-color:#34d399;">
+              <h3>Solana · 高性能链</h3>
+              <ul>
+                <li>速度非常快（快速出块）</li>
+                <li>费用极低，适合高频、小额交易</li>
+                <li>Meme 文化火爆，生态发展快</li>
+              </ul>
+            </div>
+
+          </div>
+
+          <p style="margin-top:8px;font-size:13px;color:#6b7280;">
+            小结：不同链像不同城市，各有定位、节奏和文化。
+          </p>
+        </section>
+
+        <section>
+          <h2>3. So what is Layer 2 (L2)?</h2>
+          <p>
+            Layer 2 是专门为 <strong>Ethereum</strong> 扩容的网络。
+            它在不牺牲安全性的前提下，让交易变得更快、更便宜。
+          </p>
+
+          <p>
+            简单说：<strong>ETH 太拥挤 → L2 来帮忙减压</strong>
+          </p>
+
+          <ul>
+            <li>把大量交易放到链下处理</li>
+            <li>只把最终结果提交回以太坊主网（L1）</li>
+            <li>因此：手续费大幅降低，速度大幅提升</li>
+          </ul>
+
+          <p><strong>典型 L2：</strong></p>
+          <ul>
+            <li><strong>Arbitrum</strong> – 目前最大 L2</li>
+            <li><strong>Optimism</strong> – 和 Coinbase 合作 Base</li>
+            <li><strong>Base</strong> – Meme 生态很强（包括 BRETT）</li>
+            <li><strong>zkSync</strong> – zk 技术路线</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>4. Public Chains vs Layer 2</h2>
+          <p>一个非常简单、直观的对比：</p>
+
+          <div class="compare-grid">
+            <div class="compare-card cex">
+              <h3>Public Chain（L1）</h3>
+              <ul>
+                <li>主链，安全性最高</li>
+                <li>交易写在主链上，成本较高</li>
+                <li>速度较慢（尤其以太坊）</li>
+                <li>适合价值存储或大型协议</li>
+              </ul>
+            </div>
+
+            <div class="compare-card dex">
+              <h3>Layer 2（L2）</h3>
+              <ul>
+                <li>构建在 L1 之上</li>
+                <li>交易便宜很多</li>
+                <li>速度更快</li>
+                <li>适合日常交易、Meme、交互</li>
+              </ul>
+            </div>
+          </div>
+
+          <p style="margin-top:8px;font-size:13px;color:#6b7280;">
+            概念理解：<strong>L1 是高速公路，L2 是匝道。</strong>
+          </p>
+        </section>
+
+        <section>
+          <h2>5. Why does this matter for you?</h2>
+          <p>因为不同的链，直接影响你的：</p>
+
+          <ul>
+            <li>转账费用（Gas）</li>
+            <li>转账速度</li>
+            <li>你能玩到的项目和生态</li>
+            <li>钱包地址是否兼容（EVM / non-EVM）</li>
+          </ul>
+
+          <p><strong>举例：</strong></p>
+          <ul>
+            <li>你玩 Solana meme → 一般用 Phantom + Solana 主网</li>
+            <li>你玩 ETH NFT → 一般在 Ethereum 或 Base</li>
+            <li>你跨链转资产 → 可能需要桥（Bridge）</li>
+          </ul>
+        </section>
+
+        <section class="callout warning light">
+          <h3>⚠️ Watch out for network mistakes</h3>
+          <p>新手最常见的错误：<strong>发错网络</strong>。</p>
+
+          <ul>
+            <li>把 ETH 发送到 Solana 地址（直接消失）</li>
+            <li>把 USDT-ERC20 当成 USDT-TRC20 处理</li>
+            <li>忘记切链就授权 / Swap</li>
+          </ul>
+
+          <p><strong>规则：永远确认你当前使用的是哪条链。</strong></p>
+        </section>
+
+        <section>
+          <h2>6. Quick recap</h2>
+          <ul>
+            <li>Public Chain = 链的底层（BTC / ETH / SOL）</li>
+            <li>Layer 2 = 为以太坊扩容的“更便宜更快的链”</li>
+            <li>不同链有不同生态：NFT、DeFi、Meme、合约、跨链</li>
+            <li>你的钱包和 Gas 会随着链不同而变化</li>
+          </ul>
+
+          <p>
+            下一节，我们将深入讲解「Wallets & Private Keys」，也是你真正开始接触链上世界前最重要的一课。
+          </p>
+        </section>
+
+        <footer class="lesson-footer">
+          <a class="nav-link" href="lesson-crypto101-1.html">← Previous: What is Bitcoin?</a>
+          <a class="nav-link" href="lesson-crypto101-3.html">Next: Wallets & Private Keys →</a>
+        </footer>
+
+      </article>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Yi Web3 Notes. For education only, not financial advice.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

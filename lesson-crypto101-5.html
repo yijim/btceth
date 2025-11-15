@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Crypto 101 - Lesson 5: Gas & Fees · Yi Web3 Notes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <span class="logo-mark">Y</span>
+        <a href="index.html" class="logo-text">Yi Web3 <span>Notes</span></a>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="index.html#courses" class="nav-link active">Courses</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="layout">
+    <!-- Sidebar -->
+    <aside class="sidebar light">
+      <div class="course-info">
+        <p class="course-label">Course</p>
+        <h2>Crypto 101</h2>
+        <p class="tagline">From zero to understanding crypto.</p>
+        <p class="meta-line">Level: <span>Beginner</span></p>
+        <p class="meta-line">Total time: <span>~ 1–2 hours</span></p>
+      </div>
+
+      <nav class="chapters">
+        <h3>Chapters</h3>
+        <ol>
+          <li><a href="lesson-crypto101-1.html">1. What is Bitcoin?</a></li>
+          <li><a href="lesson-crypto101-2.html">2. Public Chains & L2</a></li>
+          <li><a href="lesson-crypto101-3.html">3. Wallets & Private Keys</a></li>
+          <li><a href="lesson-crypto101-4-cex-dex.html">4. CEX vs DEX</a></li>
+          <li class="active"><a href="lesson-crypto101-5.html">5. Gas & Fees</a></li>
+          <li><a href="lesson-crypto101-6.html">6. Stablecoins</a></li>
+          <li><a href="lesson-crypto101-7.html">7. Meme Coins & Risks</a></li>
+        </ol>
+      </nav>
+    </aside>
+
+    <!-- Content -->
+    <main class="content">
+      <article class="lesson">
+
+        <header class="lesson-header">
+          <p class="breadcrumb">
+            <a href="index.html">Home</a> ·
+            <a href="index.html#courses">Crypto 101</a> ·
+            Lesson 5
+          </p>
+          <h1>Lesson 5: Gas & Fees</h1>
+          <p class="lesson-meta">
+            Time: 15 min · Last updated: 2025-11-14
+          </p>
+        </header>
+
+        <section>
+          <h2>1. What is Gas?</h2>
+          <p>
+            <strong>Gas</strong> is the fee you pay to use a blockchain network.  
+            It compensates validators/miners for processing your transaction.
+          </p>
+
+          <p>一句话：<strong>Gas = 区块链的“手续费”。</strong></p>
+
+          <ul>
+            <li>你转账需要 Gas</li>
+            <li>你 Swap 需要 Gas</li>
+            <li>你 Mint NFT 需要 Gas</li>
+            <li>你提现到钱包，也需要 Gas（视链而定）</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>2. Why does Gas exist?</h2>
+          <p>Gas 有三个作用：</p>
+
+          <ul>
+            <li>防止网络被垃圾交易攻击</li>
+            <li>激励节点处理交易</li>
+            <li>让网络具备价格调节机制（拥堵时更贵）</li>
+          </ul>
+
+          <p>
+            就像打车：堵车时涨价、路通时便宜。
+          </p>
+        </section>
+
+        <section>
+          <h2>3. Gas on different blockchains</h2>
+          <p>不同公链的 Gas 差异非常大：</p>
+
+          <div class="compare-grid">
+            <div class="compare-card" style="background:#fefce8;border-color:#facc15;">
+              <h3>Bitcoin</h3>
+              <ul>
+                <li>主要用于转账</li>
+                <li>费用一般中等</li>
+                <li>不适合复杂的智能合约</li>
+              </ul>
+            </div>
+
+            <div class="compare-card" style="background:#eef2ff;border-color:#818cf8;">
+              <h3>Ethereum</h3>
+              <ul>
+                <li>最贵的主流公链之一</li>
+                <li>DeFi / NFT 活跃时 Gas 可达几十美元</li>
+                <li>拥堵严重时甚至能到 $100+</li>
+              </ul>
+            </div>
+
+            <div class="compare-card" style="background:#ecfdf5;border-color:#34d399;">
+              <h3>Solana</h3>
+              <ul>
+                <li>几乎免费（$0.002~$0.005）</li>
+                <li>适合小额、高频、meme、sniping</li>
+                <li>高 TPS，拥堵时有丢包但仍便宜</li>
+              </ul>
+            </div>
+          </div>
+
+          <p style="font-size:13px;color:#6b7280;margin-top:8px;">
+            小结：<strong>ETH 最贵，SOL 最便宜。</strong>
+          </p>
+        </section>
+
+        <section>
+          <h2>4. Gas is not the coin you pay</h2>
+          <p>关键点：不同链用不同的代币作为 Gas。</p>
+
+          <ul>
+            <li>在 Bitcoin 用：<strong>BTC</strong></li>
+            <li>在 Ethereum 用：<strong>ETH</strong></li>
+            <li>在 Solana 用：<strong>SOL</strong></li>
+            <li>在 BNB Chain 用：<strong>BNB</strong></li>
+            <li>在 Polygon 用：<strong>MATIC</strong></li>
+          </ul>
+
+          <p>所以你钱包里必须保留一点主币作为手续费。</p>
+
+          <div class="callout warning light">
+            <p>
+              注意：如果主币余额为 0，你无法做任何链上操作（Swap / 转账 / NFT）。
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <h2>5. Why is Ethereum so expensive?</h2>
+          <p>原因很简单：</p>
+
+          <ul>
+            <li>生态最成熟，用户最多</li>
+            <li>安全性高、去中心化程度高</li>
+            <li>交易竞争激烈</li>
+          </ul>
+
+          <p>
+            所以才有 Layer 2（Arbitrum / Optimism / Base / zkSync）来扩容。
+          </p>
+        </section>
+
+        <section>
+          <h2>6. Gas tips to save money</h2>
+          <ul>
+            <li>ETH 尽量在网络不拥堵时转账（周末最便宜）</li>
+            <li>链上小额交易尽量用 Solana 或 L2</li>
+            <li>不要频繁 Approve，可减少攻击风险 + 减少 Gas</li>
+            <li>Swap 大额时用 L2 比 ETH 主网便宜很多</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>7. Quick recap</h2>
+          <ul>
+            <li>Gas = 区块链手续费</li>
+            <li>不同链的 Gas 差异巨大：ETH &gt; BTC &gt; Solana</li>
+            <li>每条链用自己的主币支付 Gas</li>
+            <li>钱包要留一点主币作为“油费”</li>
+            <li>L2 可以大幅降低手续费</li>
+          </ul>
+
+          <p>
+            下一节我们会讲常见、最常用的稳定币：USDT、USDC、DAI。
+          </p>
+        </section>
+
+        <footer class="lesson-footer">
+          <a class="nav-link" href="lesson-crypto101-4-cex-dex.html">← Previous: CEX vs DEX</a>
+          <a class="nav-link" href="lesson-crypto101-6.html">Next: Stablecoins →</a>
+        </footer>
+
+      </article>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Yi Web3 Notes. For education only, not financial advice.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

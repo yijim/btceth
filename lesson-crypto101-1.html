@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Crypto 101 - Lesson 1: What is Bitcoin? · Yi Web3 Notes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <span class="logo-mark">Y</span>
+        <a href="index.html" class="logo-text">Yi Web3 <span>Notes</span></a>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="index.html#courses" class="nav-link active">Courses</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="layout">
+    <!-- 左侧章节导航 -->
+    <aside class="sidebar light">
+      <div class="course-info">
+        <p class="course-label">Course</p>
+        <h2>Crypto 101</h2>
+        <p class="tagline">From zero to understanding crypto.</p>
+        <p class="meta-line">Level: <span>Beginner</span></p>
+        <p class="meta-line">Total time: <span>~ 1–2 hours</span></p>
+      </div>
+
+      <nav class="chapters">
+        <h3>Chapters</h3>
+        <ol>
+          <li class="active"><a href="lesson-crypto101-1.html">1. What is Bitcoin?</a></li>
+          <li><a href="lesson-crypto101-2.html">2. Public Chains & L2</a></li>
+          <li><a href="lesson-crypto101-3.html">3. Wallets & Private Keys</a></li>
+          <li><a href="lesson-crypto101-4.html">4. CEX vs DEX</a></li>
+          <li><a href="lesson-crypto101-5.html">5. Gas & Fees</a></li>
+          <li><a href="lesson-crypto101-6.html">6. Stablecoins</a></li>
+          <li><a href="lesson-crypto101-7.html">7. Meme Coins & Risks</a></li>
+        </ol>
+      </nav>
+    </aside>
+
+    <!-- 右侧正文 -->
+    <main class="content">
+      <article class="lesson">
+        <header class="lesson-header">
+          <p class="breadcrumb">
+            <a href="index.html">Home</a> ·
+            <a href="index.html#courses">Crypto 101</a> ·
+            Lesson 1
+          </p>
+          <h1>Lesson 1: What is Bitcoin?</h1>
+          <p class="lesson-meta">
+            Time: 15 min · Last updated: 2025-11-14
+          </p>
+        </header>
+
+        <section>
+          <h2>1. Why do we even need Bitcoin?</h2>
+          <p>
+            Bitcoin is the first successful <strong>decentralized digital currency</strong>.
+            Instead of relying on banks or governments, it uses a public ledger
+            called the <strong>blockchain</strong> to record all transactions.
+          </p>
+          <p>
+            A simple way to imagine Bitcoin: a global spreadsheet that everyone
+            can check, but no single person can secretly change.
+          </p>
+        </section>
+
+        <section>
+          <h2>2. Key ideas in one picture</h2>
+          <ul>
+            <li>No central bank – rules are defined by open-source code.</li>
+            <li>Limited supply – only 21 million BTC will ever exist.</li>
+            <li>Anyone can verify transactions – transparency by design.</li>
+          </ul>
+          <p>
+            This combination makes Bitcoin very different from traditional money,
+            which can be printed in unlimited quantities.
+          </p>
+        </section>
+
+        <section>
+          <h2>3. Bitcoin vs. the coins you see on exchanges</h2>
+          <p>
+            Most of the coins you see today (altcoins, meme coins) are built
+            <em>after</em> Bitcoin. Many are experiments; some are pure hype.
+          </p>
+          <p>
+            If you first understand Bitcoin&apos;s purpose and design, you can
+            better judge whether a new coin is innovating something real, or just
+            borrowing marketing buzzwords.
+          </p>
+        </section>
+
+        <section class="callout warning light">
+          <h3>⚠️ Risk Reminder</h3>
+          <p>
+            These notes are for <strong>education only</strong>. Nothing here is
+            financial advice. Crypto is highly volatile. Never invest money you
+            cannot afford to lose.
+          </p>
+        </section>
+
+        <section>
+          <h2>4. Quick recap</h2>
+          <ul>
+            <li>Bitcoin = first decentralized digital currency.</li>
+            <li>Blockchain = shared ledger that everyone can verify.</li>
+            <li>Limited supply + transparent rules make it unique.</li>
+          </ul>
+          <p>
+            In the next lesson, we will zoom out from Bitcoin and look at other
+            public blockchains (Ethereum, Solana, etc.) and how they extend the
+            ideas introduced here.
+          </p>
+        </section>
+
+        <footer class="lesson-footer">
+          <a class="nav-link disabled">← Previous</a>
+          <a class="nav-link" href="lesson-crypto101-2.html">Next: Public Chains & L2 →</a>
+        </footer>
+      </article>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Yi Web3 Notes. For education only, not financial advice.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

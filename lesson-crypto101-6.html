@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Crypto 101 - Lesson 6: Stablecoins · Yi Web3 Notes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <span class="logo-mark">Y</span>
+        <a href="index.html" class="logo-text">Yi Web3 <span>Notes</span></a>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="index.html#courses" class="nav-link active">Courses</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="layout">
+    <!-- Sidebar -->
+    <aside class="sidebar light">
+      <div class="course-info">
+        <p class="course-label">Course</p>
+        <h2>Crypto 101</h2>
+        <p class="tagline">From zero to understanding crypto.</p>
+        <p class="meta-line">Level: <span>Beginner</span></p>
+        <p class="meta-line">Total time: <span>~ 1–2 hours</span></p>
+      </div>
+
+      <nav class="chapters">
+        <h3>Chapters</h3>
+        <ol>
+          <li><a href="lesson-crypto101-1.html">1. What is Bitcoin?</a></li>
+          <li><a href="lesson-crypto101-2.html">2. Public Chains & L2</a></li>
+          <li><a href="lesson-crypto101-3.html">3. Wallets & Private Keys</a></li>
+          <li><a href="lesson-crypto101-4-cex-dex.html">4. CEX vs DEX</a></li>
+          <li><a href="lesson-crypto101-5.html">5. Gas & Fees</a></li>
+          <li class="active"><a href="lesson-crypto101-6.html">6. Stablecoins</a></li>
+          <li><a href="lesson-crypto101-7.html">7. Meme Coins & Risks</a></li>
+        </ol>
+      </nav>
+    </aside>
+
+    <!-- Content -->
+    <main class="content">
+      <article class="lesson">
+
+        <header class="lesson-header">
+          <p class="breadcrumb">
+            <a href="index.html">Home</a> ·
+            <a href="index.html#courses">Crypto 101</a> ·
+            Lesson 6
+          </p>
+          <h1>Lesson 6: Stablecoins</h1>
+          <p class="lesson-meta">
+            Time: 15 min · Last updated: 2025-11-14
+          </p>
+        </header>
+
+        <section>
+          <h2>1. What is a stablecoin?</h2>
+          <p>
+            A <strong>stablecoin</strong> is a cryptocurrency designed to maintain
+            a stable value — usually pegged to 1 US dollar.
+          </p>
+
+          <p>一句话：<strong>稳定币 = 加密世界里的“美元”。</strong></p>
+
+          <p>稳定币存在的原因很简单：</p>
+
+          <ul>
+            <li>BTC、ETH、SOL 波动大，不能当现金用</li>
+            <li>但链上交易需要“稳定的计价单位”</li>
+            <li>所以出现了 1 USDT ≈ $1 的币</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>2. The major stablecoins</h2>
+          <p>全世界最主流的三种稳定币：</p>
+
+          <div class="compare-grid">
+
+            <div class="compare-card" style="background:#fefce8;border-color:#facc15;">
+              <h3>USDT — Tether</h3>
+              <ul>
+                <li>市值最大（最大使用量）</li>
+                <li>交易所 & 链上使用最广</li>
+                <li>争议较多，但依然最流行</li>
+              </ul>
+            </div>
+
+            <div class="compare-card" style="background:#eef2ff;border-color:#818cf8;">
+              <h3>USDC — Circle</h3>
+              <ul>
+                <li>透明度更高（美国监管）</li>
+                <li>被 L2、DeFi、CeFi 广泛支持</li>
+                <li>适合长期持有或跨链使用</li>
+              </ul>
+            </div>
+
+            <div class="compare-card" style="background:#ecfdf5;border-color:#34d399;">
+              <h3>DAI — MakerDAO</h3>
+              <ul>
+                <li>链上抵押生成的稳定币（去中心化）</li>
+                <li>不由公司发行，而由智能合约控制</li>
+                <li>ETH 生态早期的重要资产</li>
+              </ul>
+            </div>
+
+          </div>
+        </section>
+
+        <section>
+          <h2>3. Stablecoins on different networks</h2>
+          <p>稳定币不仅分类型，还分<strong>网络（链）</strong>。</p>
+
+          <p>例如 USDT：</p>
+
+          <ul>
+            <li>USDT-ERC20（以太坊）</li>
+            <li>USDT-TRC20（波场）</li>
+            <li>USDT-SPL（Solana）</li>
+            <li>USDT-BEP20（BNB Chain）</li>
+          </ul>
+
+          <div class="callout warning light">
+            <p><strong>不同网络的 USDT 完全不兼容！</strong></p>
+            <p>发错网络 → 资产直接消失（无法找回）。</p>
+          </div>
+
+          <p>
+            所以提币前永远确认：你的钱包地址支持哪条链。
+          </p>
+        </section>
+
+        <section>
+          <h2>4. Why are stablecoins important?</h2>
+          <p>稳定币是整个加密世界的“血液”。</p>
+
+          <ul>
+            <li>链上所有资产都用稳定币计价（meme、NFT、DeFi）</li>
+            <li>交易对常见：SOL/USDC、ETH/USDT</li>
+            <li>打新、撸空投也以稳定币为基础</li>
+            <li>CEX ↔ 钱包 最常用的转账单位</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>5. Risks</h2>
+          <p>稳定币 ≠ 绝对安全。</p>
+
+          <div class="compare-grid">
+            <div class="compare-card cex">
+              <h3>USDT 风险</h3>
+              <ul>
+                <li>透明度争议（储备资产问题）</li>
+                <li>过去出过 FUD，但都挺过来</li>
+              </ul>
+            </div>
+
+            <div class="compare-card dex">
+              <h3>USDC 风险</h3>
+              <ul>
+                <li>遭遇过银行暴雷（SVB）导致短暂脱锚</li>
+                <li>受传统金融系统波动影响较大</li>
+              </ul>
+            </div>
+          </div>
+
+          <p>
+            去中心化稳定币（DAI）风险：  
+            抵押品可能价格暴跌 → 锁仓被清算 → 脱锚。
+          </p>
+        </section>
+
+        <section>
+          <h2>6. Which stablecoin should you use?</h2>
+          <ul>
+            <li><strong>日常交易：</strong>USDT / USDC 都可以</li>
+            <li><strong>ETH DeFi：</strong>通常 USDC 更主流</li>
+            <li><strong>Solana：</strong>USDC-SPL（最常用）</li>
+            <li><strong>跨链体验：</strong>USDC 支持更广</li>
+            <li><strong>不建议持有：</strong>TRC20-USDT（链生态较封闭）</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>7. Quick recap</h2>
+          <ul>
+            <li>稳定币 = 加密世界里的“美元”。</li>
+            <li>最常见：USDT / USDC / DAI。</li>
+            <li>相同名称，不同链的稳定币完全不兼容。</li>
+            <li>转账前务必确认链，否则直接消失。</li>
+            <li>USDT 用量最大，USDC 最透明，DAI 最去中心化。</li>
+          </ul>
+
+          <p>
+            下一节是许多新手最感兴趣的内容 —— Meme 币和它的风险。
+          </p>
+        </section>
+
+        <footer class="lesson-footer">
+          <a class="nav-link" href="lesson-crypto101-5.html">← Previous: Gas & Fees</a>
+          <a class="nav-link" href="lesson-crypto101-7.html">Next: Meme Coins & Risks →</a>
+        </footer>
+
+      </article>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Yi Web3 Notes. For education only, not financial advice.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
